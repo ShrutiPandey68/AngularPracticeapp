@@ -1,1 +1,98 @@
-<p>dashboard works!</p>
+<div class="container mt-4">
+    <h2>Travel Plans Dashboard</h2>
+  
+    <!-- Travel Plans Section -->
+    <div class="row">
+      
+      <!-- Flight Plan with Date Picker -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <img src="assets/flight.jpg" class="card-img-top" alt="Flight">
+          <div class="card-body">
+            <h5 class="card-title">Flight Plan: New York to Los Angeles</h5>
+            <p class="card-text">Price: $500</p>
+            <label for="flightDate">Select Date:</label>
+            <input type="date" id="flightDate" class="form-control mb-2" [(ngModel)]="selectedFlightDate">
+            <p class="card-text">Selected Date: {{ selectedFlightDate || 'No date selected' }}</p>
+            <a href="#" class="btn btn-primary" (click)="bookFlight()">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Hotel Booking with Room Type Selection -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <img src="assets/hotel.jpg" class="card-img-top" alt="Hotel">
+          <div class="card-body">
+            <h5 class="card-title">Hotel: Grand Hyatt, Dubai</h5>
+            <p class="card-text">Price: $300/night</p>
+            <label for="roomType">Select Room Type:</label>
+            <select id="roomType" class="form-control mb-2" [(ngModel)]="selectedRoomType">
+              <option value="Standard">Standard Room</option>
+              <option value="Deluxe">Deluxe Room</option>
+              <option value="Suite">Suite Room</option>
+            </select>
+            <p class="card-text">Selected Room: {{ selectedRoomType || 'No room selected' }}</p>
+            <a href="#" class="btn btn-primary" (click)="bookHotel()">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Train Plan with Date Picker -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <img src="assets/train.jpg" class="card-img-top" alt="Train">
+          <div class="card-body">
+            <h5 class="card-title">Train Plan: Paris to Berlin</h5>
+            <p class="card-text">Price: €120</p>
+            <label for="trainDate">Select Date:</label>
+            <input type="date" id="trainDate" class="form-control mb-2" [(ngModel)]="selectedTrainDate">
+            <p class="card-text">Selected Date: {{ selectedTrainDate || 'No date selected' }}</p>
+            <a href="#" class="btn btn-primary" (click)="bookTrain()">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Holiday Package -->
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <img src="assets/package.jpg" class="card-img-top" alt="Holiday Package">
+          <div class="card-body">
+            <h5 class="card-title">Holiday Package: Bali Getaway</h5>
+            <p class="card-text">Price: $1500 (5 days, 4 nights)</p>
+            <p class="card-text">Departure: Nov 5, 2024</p>
+            <a href="#" class="btn btn-primary" (click)="bookPackage()">Book Now</a>
+          </div>
+        </div>
+      </div>
+   <!-- Flight Plan with Date Picker -->
+   <div class="col-md-6">
+    <div class="card mb-4">
+      <img src="assets/flight.jpg" class="card-img-top" alt="Flight">
+      <div class="card-body">
+        <h5 class="card-title">Flight Plan: India to Los Angeles</h5>
+        <p class="card-text">Price: $500</p>
+        <label for="flightDate">Select Date:</label>
+        <input type="date" id="flightDate" class="form-control mb-2" [(ngModel)]="selectedFlightDate">
+        <p class="card-text">Selected Date: {{ selectedFlightDate || 'No date selected' }}</p>
+        <a href="#" class="btn btn-primary" (click)="bookFlight()">Book Now</a>
+      </div>
+    </div>
+  </div>
+     <!-- Flight Plan with Date Picker -->
+     <div class="col-md-6">
+        <div class="card mb-4">
+          <img src="assets/flight1.jpg" class="card-img-top" alt="Flight">
+          <div class="card-body">
+            <h5 class="card-title">Flight Plan: India to UAE</h5>
+            <p class="card-text">Price: $500</p>
+            <label for="flightDate">Select Date:</label>
+            <input type="date" id="flightDate" class="form-control mb-2" [(ngModel)]="selectedFlightDate">
+            <p class="card-text">Selected Date: {{ selectedFlightDate || 'No date selected' }}</p>
+            <a href="#" class="btn btn-primary" (click)="bookFlight()">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
